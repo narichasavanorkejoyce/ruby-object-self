@@ -10,8 +10,9 @@ class MethodChainer
 
   def reverse!
     @content = @content.reverse
+    self
     # self -- notice the difference when commented out
-    # What is returned?
+    # What is returned? Returns the entire object, not just the result of the method
   end
 
   def caps!
